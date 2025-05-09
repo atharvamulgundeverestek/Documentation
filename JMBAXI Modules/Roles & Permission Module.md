@@ -96,6 +96,8 @@ Each **role** is assigned a set of **permissions** that define what actions and 
 | Custom        | Configurable at runtime. Can include any combination of permission keys                          |
 
 > Note: Roles can be **created, edited, and deleted** dynamically by authorized users (e.g., Super Admins). However, base roles like `Super Admin` may be locked from deletion.
+
+>Refer to the [useAccessControl hook]([./useAccessControl.md](https://github.com/atharvamulgundeverestek/Documentation/blob/main/JMBAXI%20HOOKS/useAccessControl.md)) for how to implement role-permission checks in the frontend UI.
 # Real World Example 
 ![Role Listing](./role-permission-assets/role-listing.png)
 ![Create Role](./role-permission-assets/create-roles.png)
