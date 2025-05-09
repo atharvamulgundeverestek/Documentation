@@ -59,7 +59,7 @@ export default useAccessControl;
 ---
 ### usePermissions Hook
 
-The `usePermissions` hook fetches and sets the current user's permission list using Jotai atoms.
+The `usePermissions` hook provides access to the current user's granted permissions and also allows updating them within the application state.
 
 ```js
 import { currentUserPermissions } from "@/store";
