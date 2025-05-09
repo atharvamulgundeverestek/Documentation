@@ -107,7 +107,7 @@ const FinanceSection = () => {
 
 ---
 
-# Sample Permissions JSON
+# Sample Permissions
 
 This is an example of how permissions may be structured:
 
