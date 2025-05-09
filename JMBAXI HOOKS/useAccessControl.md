@@ -59,7 +59,7 @@ export default useAccessControl;
 ---
 ### usePermissions Hook
 
-The `usePermissions` hook provides access to the current user's granted permissions and also allows updating them within the application state.
+The `usePermissions` hook provides access to the current user's granted permissions and also allows updating them within the application state. Permissions can be updated in the atom by setting them when fetched, either from an API response or extracted from the user's ID token.
 
 ```js
 import { currentUserPermissions } from "@/store";
