@@ -48,7 +48,7 @@ This is known as a **permission dependency** or **implied permission**, and it s
 
 > ✅ This ensures consistency and avoids access conflicts when rendering data or performing actions.
 ### Example Permission JSON
-```json
+```
 PASSENGERS: {
 
     GET_PASSENGERS: "GET_PASSENGERS",
@@ -96,8 +96,8 @@ Each **role** is assigned a set of **permissions** that define what actions and 
 | Custom        | Configurable at runtime. Can include any combination of permission keys                          |
 
 > Note: Roles can be **created, edited, and deleted** dynamically by authorized users (e.g., Super Admins). However, base roles like `Super Admin` may be locked from deletion.
-# Product Example
-![[Pasted image 20250509121651.png]]
-![[Pasted image 20250509121615.png]]
-![[Pasted image 20250509121744.png]]
-![[Pasted image 20250509121829.png]]
+# Real World Example 
+![Role Listing](./role-permission-assets/role-listing.png)
+![Create Role](./role-permission-assets/create-roles.png)
+![Permission Listing](./role-permission-assets/permission-listing.png)
+![Role Permission Mapping](./role-permission-assets/role-map-permission.png)
