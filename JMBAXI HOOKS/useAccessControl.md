@@ -47,7 +47,7 @@ export default useAccessControl;
 
 ### Parameters
 
-- `permission`: Can be a single string (like `FINANCE.GET_FINANCES`), or an array of strings. Also accepts `PERMISSIONS.PUBLIC` as a special case to always allow access.
+- `permission`: Can be a single string (like `PASSENGER.GET_PASSENGERS`), or an array of strings. Also accepts `PERMISSIONS.PUBLIC` as a special case to always allow access.
 
 ---
 
@@ -57,7 +57,32 @@ export default useAccessControl;
 - `grantedPermissions`: The full list of permission codes available to the current user.
 
 ---
+### usePermissions Hook
 
+The `usePermissions` hook fetches and sets the current user's permission list using Jotai atoms.
+
+```js
+import { currentUserPermissions } from "@/store";
+import { useAtomValue, useSetAtom } from "jotai";
+
+const usePermissions = () => {
+  const permissions = useAtomValue(currentUserPermissions);
+  const setPermissions = useSetAtom(currentUserPermissions);
+
+  return {
+    permissions,
+    setPermissions,
+  };
+};
+
+export default usePermissions;
+```
+
+---
+
+### Parameters
+
+- `permission`: Can be a single string (like `FINANCE.GET_FINANCES`), or an array of strings. Also accepts `PERMISSIONS.PUBLIC` as a special case to always allow access.
 # Example Usage
 
 ```jsx
